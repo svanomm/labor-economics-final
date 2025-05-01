@@ -1,0 +1,909 @@
+R00001.00    [PUBID]                                        Survey Year: 1997
+  PRIMARY VARIABLE
+
+             PUBID, YOUTH CASE IDENTIFICATION CODE
+ 
+COMMENT: YOUTH CASE IDENTIFICATION CODE
+ 
+       0           0
+     998           1 TO 999
+     999        1000 TO 1999
+     997        2000 TO 2999
+     996        3000 TO 3999
+     998        4000 TO 4999
+     996        5000 TO 5999
+     994        6000 TO 6999
+     994        7000 TO 7999
+     989        8000 TO 8999
+      23        9000 TO 9999
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:           9022        Mean:              4504.3
+ 
+Lead In: R72976.00[Default]
+Default Next Question: R05363.00
+--------------------------------------------------------------------------------
+R00689.00    [YSCH-35900]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             R HAD SOMETHING STOLEN FROM SCHOOL
+ 
+... I had something of value stolen from me at school.
+ 
+UNIVERSE: R has been enrolled in regular school; currently enrolled in K-12 
+school
+ 
+    6680           0
+    2070           1 TO 4
+      82           5 TO 9
+      24          10 TO 14
+       4          15 TO 19
+      10          20 TO 24
+       0          25 TO 29
+       1          30 TO 34
+       0          35 TO 39
+       0          40 TO 44
+       0          45 TO 49
+       0          50 TO 99999999: 50+
+  -------
+    8871
+ 
+Refusal(-1)            1
+Don't Know(-2)         7
+TOTAL =========>    8879   VALID SKIP(-4)     105     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             30        Mean:                 .47
+ 
+Lead In: R00688.00[Default]
+Default Next Question: R00690.00
+--------------------------------------------------------------------------------
+R00690.00    [YSCH-36000]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             R THREATENED TO BE HURT AT SCHOOL
+ 
+... Someone threatened to hurt me at school.
+ 
+UNIVERSE: R has been enrolled in regular school; currently enrolled in K-12 
+school
+ 
+    7019           0
+    1445           1 TO 4
+     195           5 TO 9
+      91          10 TO 14
+      30          15 TO 19
+      32          20 TO 24
+       7          25 TO 29
+      18          30 TO 34
+       1          35 TO 39
+       2          40 TO 44
+       2          45 TO 49
+      27          50 TO 99999999: 50+
+  -------
+    8869
+ 
+Refusal(-1)            1
+Don't Know(-2)         9
+TOTAL =========>    8879   VALID SKIP(-4)     105     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             99        Mean:                 .98
+ 
+Lead In: R00689.00[Default]
+Default Next Question: R00691.00
+--------------------------------------------------------------------------------
+R00691.00    [YSCH-36100]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             R IN A FIGHT AT SCHOOL
+ 
+... I got into a physical fight at school.
+ 
+UNIVERSE: R has been enrolled in regular school; currently enrolled in K-12 
+school
+ 
+    7310           0
+    1428           1 TO 4
+      82           5 TO 9
+      30          10 TO 14
+       6          15 TO 19
+       8          20 TO 24
+       3          25 TO 29
+       1          30 TO 34
+       0          35 TO 39
+       1          40 TO 44
+       0          45 TO 49
+       3          50 TO 99999999: 50+
+  -------
+    8872
+ 
+Refusal(-1)            0
+Don't Know(-2)         7
+TOTAL =========>    8879   VALID SKIP(-4)     105     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             50        Mean:                  .4
+ 
+Lead In: R00690.00[Default]
+Default Next Question: R00692.00
+--------------------------------------------------------------------------------
+R00692.00    [YSCH-36200]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             R LATE FOR SCHOOL WITHOUT EXCUSE
+ 
+... I was late for school without an excuse.
+ 
+UNIVERSE: R has been enrolled in regular school; currently enrolled in K-12 
+school
+ 
+    5341           0
+    2236           1 TO 4
+     618           5 TO 9
+     269          10 TO 14
+     105          15 TO 19
+     113          20 TO 24
+      24          25 TO 29
+      42          30 TO 34
+       6          35 TO 39
+      14          40 TO 44
+       9          45 TO 49
+      44          50 TO 99999999: 50+
+  -------
+    8821
+ 
+Refusal(-1)            3
+Don't Know(-2)        55
+TOTAL =========>    8879   VALID SKIP(-4)     105     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             99        Mean:                 2.4
+ 
+Lead In: R00691.00[Default]
+Default Next Question: R00693.00
+--------------------------------------------------------------------------------
+R00693.00    [YSCH-36300]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             # DAYS R ABSENT FROM SCHOOL?
+ 
+How many days were you absent from school during the Fall term?
+ 
+UNIVERSE: R has been enrolled in regular school; currently enrolled in K-12 
+school
+ 
+    1681           0
+    3955           1 TO 4
+    1844           5 TO 9
+     630          10 TO 14
+     207          15 TO 19
+     146          20 TO 24
+      56          25 TO 29
+      74          30 TO 34
+      22          35 TO 39
+      26          40 TO 44
+       8          45 TO 49
+      38          50 TO 99999999: 50+
+  -------
+    8687
+ 
+Refusal(-1)            4
+Don't Know(-2)       188
+TOTAL =========>    8879   VALID SKIP(-4)     105     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:            200        Mean:                4.89
+ 
+Lead In: R00692.00[Default]
+Default Next Question: R00694.00
+--------------------------------------------------------------------------------
+R00694.00    [YSCH-36400]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             TEACHERS GOOD (AGREE/DISAGREE)
+ 
+Thinking about your (last) school in general, how much do you agree with each of
+the following statements about your school and teachers?
+ 
+... The teachers are good. Do you strongly agree, agree, disagree, or strongly 
+disagree?
+ 
+UNIVERSE: R has been enrolled in regular school
+ 
+    1573       1 Strongly agree
+    6192       2 Agree
+     964       3 Disagree
+     236       4 Strongly Disagree
+  -------
+    8965
+ 
+Refusal(-1)            2
+Don't Know(-2)         3
+TOTAL =========>    8970   VALID SKIP(-4)      14     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                1.98
+ 
+Lead In: R00693.00[Default]  R00688.00[1:1]
+Default Next Question: R00695.00
+--------------------------------------------------------------------------------
+R00695.00    [YSCH-36500]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             TEACHERS INTERESTED IN STUDENTS AGREE/DISAGREE
+ 
+... The teachers are interested in the students.
+ 
+UNIVERSE: R has been enrolled in regular school
+ 
+    2115       1 Strongly agree
+    5513       2 Agree
+    1171       3 Disagree
+     159       4 Strongly Disagree
+  -------
+    8958
+ 
+Refusal(-1)            1
+Don't Know(-2)        11
+TOTAL =========>    8970   VALID SKIP(-4)      14     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                1.93
+ 
+Lead In: R00694.00[Default]
+Default Next Question: R00696.00
+--------------------------------------------------------------------------------
+R00696.00    [YSCH-36600]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             STUDENTS DISRUPT LEARNING AGREE/DISAGREE
+ 
+... Disruptions by other students [get/gets] in the way of my learning.
+ 
+UNIVERSE: R has been enrolled in regular school
+ 
+    1940       1 Strongly agree
+    3625       2 Agree
+    2904       3 Disagree
+     495       4 Strongly Disagree
+  -------
+    8964
+ 
+Refusal(-1)            2
+Don't Know(-2)         4
+TOTAL =========>    8970   VALID SKIP(-4)      14     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.22
+ 
+Lead In: R00695.00[Default]
+Default Next Question: R00697.00
+--------------------------------------------------------------------------------
+R00697.00    [YSCH-36700]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             STUDENTS GRADED FAIRLY AGREE/DISAGREE
+ 
+... Students are graded fairly.
+ 
+UNIVERSE: R has been enrolled in regular school
+ 
+    2086       1 Strongly agree
+    5193       2 Agree
+    1436       3 Disagree
+     241       4 Strongly Disagree
+  -------
+    8956
+ 
+Refusal(-1)            1
+Don't Know(-2)        13
+TOTAL =========>    8970   VALID SKIP(-4)      14     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                1.98
+ 
+Lead In: R00696.00[Default]
+Default Next Question: R00698.00
+--------------------------------------------------------------------------------
+R00698.00    [YSCH-36800]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             CHEAT ON TEST AND ASSIGNMENT (AGREE/DISAGREE)
+ 
+... There is a lot of cheating on tests and assignments.
+ 
+UNIVERSE: R has been enrolled in regular school
+ 
+    1927       1 Strongly agree
+    3347       2 Agree
+    2903       3 Disagree
+     715       4 Strongly Disagree
+  -------
+    8892
+ 
+Refusal(-1)            2
+Don't Know(-2)        76
+TOTAL =========>    8970   VALID SKIP(-4)      14     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.27
+ 
+Lead In: R00697.00[Default]
+Default Next Question: R00699.00
+--------------------------------------------------------------------------------
+R00699.00    [YSCH-36900]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             DISCIPLINE IS FAIR AGREE/DISAGREE
+ 
+... Discipline is fair.
+ 
+UNIVERSE: R has been enrolled in regular school
+ 
+    1469       1 Strongly agree
+    4932       2 Agree
+    1949       3 Disagree
+     593       4 Strongly Disagree
+  -------
+    8943
+ 
+Refusal(-1)            3
+Don't Know(-2)        24
+TOTAL =========>    8970   VALID SKIP(-4)      14     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.19
+ 
+Lead In: R00698.00[Default]
+Default Next Question: R00700.00
+--------------------------------------------------------------------------------
+R00700.00    [YSCH-37000]                                   Survey Year: 1997
+  PRIMARY VARIABLE
+
+             FEEL SAFE AT SCHOOL AGREE/DISAGREE
+ 
+... I [feel /felt] safe at this school.
+ 
+UNIVERSE: R has been enrolled in regular school
+ 
+    2798       1 Strongly agree
+    4870       2 Agree
+    1018       3 Disagree
+     273       4 Strongly Disagree
+  -------
+    8959
+ 
+Refusal(-1)            2
+Don't Know(-2)         9
+TOTAL =========>    8970   VALID SKIP(-4)      14     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                1.86
+ 
+Lead In: R00699.00[Default]
+Default Next Question: R00701.00
+--------------------------------------------------------------------------------
+R03581.00    [YSAQ-361]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+             # DAYS SMOKED IN LAST 30 DAYS
+ 
+During the past 30 days, on how many days did you smoke a cigarette?
+ 
+UNIVERSE: R has smoked a cigarette
+ 
+    1899           0   (Go To R03583.00)
+     562           1 TO 4
+     143           5 TO 9
+      99          10 TO 14
+      81          15 TO 19
+      97          20 TO 24
+     115          25 TO 29
+     501          30
+  -------
+    3497
+ 
+Refusal(-1)            5
+Don't Know(-2)        15
+TOTAL =========>    3517   VALID SKIP(-4)    5467     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             30        Mean:                6.94
+ 
+Lead In: R03580.00[Default]
+Default Next Question: R03582.00
+--------------------------------------------------------------------------------
+R03585.00    [YSAQ-365]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+             # DAYS R DRINK ALCOHOL LAST 30 DAYS
+ 
+During the last 30 days, on how many days did you have one or more drinks of an 
+alcoholic beverage?
+ 
+UNIVERSE: R answered yes/no to ever having had a drink
+ 
+    2094           0   (Go To R03589.00)
+    1287           1 TO 4
+     217           5 TO 9
+     120          10 TO 14
+      48          15 TO 19
+      32          20 TO 24
+      11          25 TO 29
+      10          30
+  -------
+    3819
+ 
+Refusal(-1)            3
+Don't Know(-2)        15
+TOTAL =========>    3837   VALID SKIP(-4)    5147     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             30        Mean:                1.83
+ 
+Lead In: R03584.00[Default]
+Default Next Question: R03586.00
+--------------------------------------------------------------------------------
+R03591.00    [YSAQ-371]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+             # DAYS USE MARIJUANA IN LAST 30 DAYS?
+ 
+On how many days have you used marijuana in the last 30 days?
+ 
+UNIVERSE: R answered question if had ever tried marijuana; has used marijuana
+ 
+    1015           0   (Go To R03593.00)
+     390           1 TO 4
+      89           5 TO 9
+      74          10 TO 14
+      50          15 TO 19
+      48          20 TO 24
+      59          25 TO 29
+      60          30
+  -------
+    1785
+ 
+Refusal(-1)            6
+Don't Know(-2)         4
+TOTAL =========>    1795   VALID SKIP(-4)    7189     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             30        Mean:                4.05
+ 
+Lead In: R03590.00[Default]
+Default Next Question: R03592.00
+--------------------------------------------------------------------------------
+R05363.00    [KEY!SEX]                                      Survey Year: 1997
+  PRIMARY VARIABLE
+
+             KEY!SEX, RS SEX (SYMBOL)
+ 
+COMMENT: Sex of Youth
+ 
+    4599       1 Male
+    4385       2 Female
+       0       0 No Information
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              2        Mean:                1.49
+ 
+Lead In: R00001.00[Default]
+Default Next Question: R05364.00
+--------------------------------------------------------------------------------
+R05364.01    [KEY!BDATE_M]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+     816           1: January
+     693           2: February
+     760           3: March
+     659           4: April
+     689           5: May
+     720           6: June
+     762           7: July
+     782           8: August
+     839           9: September
+     765          10: October
+     763          11: November
+     736          12: December
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.56
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Lead In: None.
+Default Next Question: R05364.02
+--------------------------------------------------------------------------------
+R05364.02    [KEY!BDATE_Y]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:           1980        Max:           1984        Mean:             1982.01
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Lead In: R05364.01[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R12358.00    [CV_SAMPLE_TYPE]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+             SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE
+ 
+Sample type: Is the respondent a member of the cross-sectional sample or the 
+oversample?
+ 
+    6748       1 Cross-sectional
+    2236       0 Oversample
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .75
+ 
+Lead In: R12338.00[Default]
+Default Next Question: R12359.00
+--------------------------------------------------------------------------------
+R13024.00    [CV_HGC_BIO_DAD]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+             BIOLOGICAL FATHERS HIGHEST GRADE COMPLETED
+ 
+Highest grade completed by respondent's biological father (includes both 
+residential and non-residential fathers).
+ 
+       0       0 NONE
+       1       1 1ST GRADE
+      19       2 2ND GRADE
+      68       3 3RD GRADE
+      59       4 4TH GRADE
+      68       5 5TH GRADE
+     188       6 6TH GRADE
+      92       7 7TH GRADE
+     169       8 8TH GRADE
+     240       9 9TH GRADE
+     329      10 10TH GRADE
+     396      11 11TH GRADE
+    2728      12 12TH GRADE
+     381      13 1ST YEAR COLLEGE
+     736      14 2ND YEAR COLLEGE
+     176      15 3RD YEAR COLLEGE
+     840      16 4TH YEAR COLLEGE
+     113      17 5TH YEAR COLLEGE
+     270      18 6TH YEAR COLLEGE
+      85      19 7TH YEAR COLLEGE
+     162      20 8TH YEAR COLLEGE OR MORE
+       8      95 UNGRADED
+  -------
+    7128
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1188
+TOTAL =========>    8316   VALID SKIP(-4)     668     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             95        Mean:               12.66
+ 
+Lead In: R12044.00[Default]
+Default Next Question: R13025.00
+--------------------------------------------------------------------------------
+R13025.00    [CV_HGC_BIO_MOM]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+             BIOLOGICAL MOTHERS HIGHEST GRADE COMPLETED
+ 
+Highest grade completed by respondent's biological mother (includes both 
+residential and non-residential mothers).
+ 
+       0       0 NONE
+       6       1 1ST GRADE
+      29       2 2ND GRADE
+      54       3 3RD GRADE
+      52       4 4TH GRADE
+      57       5 5TH GRADE
+     222       6 6TH GRADE
+      69       7 7TH GRADE
+     205       8 8TH GRADE
+     273       9 9TH GRADE
+     428      10 10TH GRADE
+     562      11 11TH GRADE
+    3038      12 12TH GRADE
+     642      13 1ST YEAR COLLEGE
+    1002      14 2ND YEAR COLLEGE
+     248      15 3RD YEAR COLLEGE
+     908      16 4TH YEAR COLLEGE
+     157      17 5TH YEAR COLLEGE
+     227      18 6TH YEAR COLLEGE
+      34      19 7TH YEAR COLLEGE
+      77      20 8TH YEAR COLLEGE OR MORE
+       6      95 UNGRADED
+  -------
+    8296
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     523
+TOTAL =========>    8819   VALID SKIP(-4)     165     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             95        Mean:                12.5
+ 
+Lead In: R13024.00[Default]
+Default Next Question: R13026.00
+--------------------------------------------------------------------------------
+R14826.00    [KEY!RACE_ETHNICITY]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+             KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)
+ 
+COMMENT: Combined race - ethnicity variable
+ 
+    2335       1 Black
+    1901       2 Hispanic
+      83       3 Mixed Race (Non-Hispanic)
+    4665       4 Non-Black / Non-Hispanic
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.79
+ 
+Lead In: R05387.00[Default]
+Default Next Question: R05389.00
+--------------------------------------------------------------------------------
+R21915.00    [YSAQ-372B]                                    Survey Year: 1998
+  PRIMARY VARIABLE
+
+             R EVER USE COCAINE/HARD DRUGS?
+ 
+Have you ever used any drugs like cocaine or crack or heroin, or any other 
+substance not prescribed by a doctor, in order to get high or to achieve an 
+altered state?
+ 
+UNIVERSE: All
+ 
+     521       1 Yes   (Go To R21916.00)
+    7831       0 No
+  -------
+    8352
+ 
+Refusal(-1)           28
+Don't Know(-2)         6
+TOTAL =========>    8386   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     598
+ 
+Min:              0        Max:              1        Mean:                 .06
+ 
+Lead In: R21909.00[Default] R21912.00[Default] R21914.00[Default]  
+         R21913.00[0:0]
+Default Next Question: R21919.00
+--------------------------------------------------------------------------------
+S12493.00    [YHEA-3000]                                    Survey Year: 2002
+  PRIMARY VARIABLE
+
+             HAVE R'S PARENTS DIVORCED (EACH OTH OR SOMEONE ELSE) IN LAST 5 YRS
+ 
+In the last five years, have your parents divorced, either from each other or 
+from their former spouse?
+ 
+UNIVERSE: All
+ 
+     617       1 YES   (Go To S12494.00)
+    7244       0 NO
+  -------
+    7861
+ 
+Refusal(-1)            8
+Don't Know(-2)        27
+TOTAL =========>    7896   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1088
+ 
+Min:              0        Max:              1        Mean:                 .08
+ 
+Lead In: S12479.00[Default] S12484.00[Default] S12488.00[Default]
+Default Next Question: S12500.00
+--------------------------------------------------------------------------------
+U49431.00    [CV_CENSUS_REGION]                             Survey Year: 2021
+  PRIMARY VARIABLE
+
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+     996       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1362       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    2815       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1452       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    6625
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      14
+TOTAL =========>    6639   VALID SKIP(-4)      74     NON-INTERVIEW(-5)    2271
+ 
+Min:              1        Max:              4        Mean:                2.71
+ 
+Lead In: U49430.00[Default]
+Default Next Question: U49432.00
+--------------------------------------------------------------------------------
+U49496.00    [CV_HGC_EVER_EDT]                              Survey Year: 2021
+  PRIMARY VARIABLE
+
+             RS HIGHEST GRADE COMPLETED
+ 
+The highest grade completed as of the survey date.
+ 
+       0       0 NONE
+       0       1 1ST GRADE
+       0       2 2ND GRADE
+       0       3 3RD GRADE
+       0       4 4TH GRADE
+       1       5 5TH GRADE
+      16       6 6TH GRADE
+      27       7 7TH GRADE
+     191       8 8TH GRADE
+     301       9 9TH GRADE
+     341      10 10TH GRADE
+     354      11 11TH GRADE
+    1339      12 12TH GRADE
+     511      13 1ST YEAR COLLEGE
+     762      14 2ND YEAR COLLEGE
+     364      15 3RD YEAR COLLEGE
+    1020      16 4TH YEAR COLLEGE
+     382      17 5TH YEAR COLLEGE
+     409      18 6TH YEAR COLLEGE
+     236      19 7TH YEAR COLLEGE
+     378      20 8TH YEAR COLLEGE OR MORE
+       9      95 UNGRADED
+  -------
+    6641
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      72
+TOTAL =========>    6713   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2271
+ 
+Min:              5        Max:             95        Mean:               14.12
+ 
+Lead In: U49495.00[Default]
+Default Next Question: U49497.00
+--------------------------------------------------------------------------------
+U49513.00    [CV_HRLY_PAY.01]                               Survey Year: 2021
+  PRIMARY VARIABLE
+
+             WAGES - HOURLY RATE OF PAY FOR JOB 01
+ 
+The hourly rate of pay as of either the job's stop date or the interview date 
+for on-going jobs. If the job lasted 26 weeks or less this variable is 
+calculated as of the job's start date.
+ 
+COMMENT: although this calculation - which factors in the reported pay, rate of 
+pay time unit, and hours worked - can produce extremely low or extremely high 
+pay rates, these values are not edited.
+ 
+NOTE: 2 implied decimal places
+ 
+/*Topcoded. Truncated values are applied to hourly rates of pay greater than or 
+equal to $250/hour. The topcoded value is determined for each loop using the 
+average value of observed hourly rates of pay greater than or equal to 
+$250/hour.*/
+ 
+      64           0
+      80           1 TO 599: 0.01-5.99
+     154         600 TO 999: 6.00-9.99
+    2183        1000 TO 2099: 10.00-20.99
+    2160        2100 TO 4099: 21.00-40.99
+     645        4100 TO 6099: 41.00-60.99
+     318        6100 TO 9999: 61.00-99.99
+     141       10000 TO 9999999: 100.00+
+  -------
+    5745
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     171
+TOTAL =========>    5916   VALID SKIP(-4)     797     NON-INTERVIEW(-5)    2271
+ 
+Min:              0        Max:          50400        Mean:              3174.8
+ 
+Lead In: U49512.00[Default]
+Default Next Question: U49514.00
+--------------------------------------------------------------------------------
+U49569.00    [CV_URBAN-RURAL]                               Survey Year: 2021
+  PRIMARY VARIABLE
+
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2020 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1274       0 Rural
+    5295       1 Urban
+      48       2 Unknown
+  -------
+    6617
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      22
+TOTAL =========>    6639   VALID SKIP(-4)      74     NON-INTERVIEW(-5)    2271
+ 
+Min:              0        Max:              2        Mean:                 .81
+ 
+Lead In: U49566.00[Default]
+Default Next Question: U49570.00
+--------------------------------------------------------------------------------
+Z90654.01    [CVC_WKSWK_ADULT2_ALL]                         Survey Year: XRND
+  PRIMARY VARIABLE
+
+             # WEEKS ALL JOBS FROM AGE 20
+ 
+Cumulative weeks worked at all civilian jobs since age 20 as of the interview 
+date. This variable is created for all respondents regardless of interview 
+status in the current round; CVC_RND provides the actual round of the 
+respondent's most recent interview.
+ 
+Note: This variable measures the number of weeks worked from the month after the
+R's 20th birthday to the current interview date.
+ 
+     585           0 TO 50: weeks
+     171          51 TO 100: weeks
+     176         101 TO 150: weeks
+     142         151 TO 200: weeks
+     147         201 TO 250: weeks
+     168         251 TO 300: weeks
+     193         301 TO 350: weeks
+     210         351 TO 400: weeks
+     248         401 TO 450: weeks
+     239         451 TO 500: weeks
+     270         501 TO 550: weeks
+     260         551 TO 600: weeks
+     303         601 TO 650: weeks
+     367         651 TO 700: weeks
+     350         701 TO 750: weeks
+     486         751 TO 800: weeks
+     579         801 TO 850: weeks
+     731         851 TO 900: weeks
+     778         901 TO 950: weeks
+     641         951 TO 1000: weeks
+     511        1001 TO 1050: weeks
+     326        1051 TO 1100: weeks
+     142        1101 TO 1150: weeks
+       7        1151 TO 1200: weeks
+       0        1201 TO 1250: weeks
+       0        1251 TO 1300: weeks
+  -------
+    8030
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     954
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:           1180        Mean:              668.77
+ 
+Lead In: Z90653.01[Default]
+Default Next Question: Z90658.00
