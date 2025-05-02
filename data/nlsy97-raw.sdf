@@ -1,0 +1,186 @@
+
+
+Reference
+Number     Year  Variable Description                                                Question Name           
+---------------------------------------------------------------------------------------------------------------
+R00001.00  1997  PUBID, YOUTH CASE IDENTIFICATION CODE                               PUBID                   
+R00689.00  1997  R HAD SOMETHING STOLEN FROM SCHOOL                                  YSCH-35900              
+R00690.00  1997  R THREATENED TO BE HURT AT SCHOOL                                   YSCH-36000              
+R00691.00  1997  R IN A FIGHT AT SCHOOL                                              YSCH-36100              
+R00692.00  1997  R LATE FOR SCHOOL WITHOUT EXCUSE                                    YSCH-36200              
+R00693.00  1997  # DAYS R ABSENT FROM SCHOOL?                                        YSCH-36300              
+R00694.00  1997  TEACHERS GOOD (AGREE/DISAGREE)                                      YSCH-36400              
+R00695.00  1997  TEACHERS INTERESTED IN STUDENTS AGREE/DISAGREE                      YSCH-36500              
+R00696.00  1997  STUDENTS DISRUPT LEARNING AGREE/DISAGREE                            YSCH-36600              
+R00697.00  1997  STUDENTS GRADED FAIRLY AGREE/DISAGREE                               YSCH-36700              
+R00698.00  1997  CHEAT ON TEST AND ASSIGNMENT (AGREE/DISAGREE)                       YSCH-36800              
+R00699.00  1997  DISCIPLINE IS FAIR AGREE/DISAGREE                                   YSCH-36900              
+R00700.00  1997  FEEL SAFE AT SCHOOL AGREE/DISAGREE                                  YSCH-37000              
+R03581.00  1997  # DAYS SMOKED IN LAST 30 DAYS                                       YSAQ-361                
+R03585.00  1997  # DAYS R DRINK ALCOHOL LAST 30 DAYS                                 YSAQ-365                
+R03591.00  1997  # DAYS USE MARIJUANA IN LAST 30 DAYS?                               YSAQ-371                
+R05363.00  1997  KEY!SEX, RS SEX (SYMBOL)                                            KEY!SEX                 
+R05364.01  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)                         KEY!BDATE_M             
+R05364.02  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)                         KEY!BDATE_Y             
+R12003.00  1997  CENSUS REGION OF RESIDENCE                                          CV_CENSUS_REGION        
+R12358.00  1997  SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE                         CV_SAMPLE_TYPE          
+R13024.00  1997  BIOLOGICAL FATHERS HIGHEST GRADE COMPLETED                          CV_HGC_BIO_DAD          
+R13025.00  1997  BIOLOGICAL MOTHERS HIGHEST GRADE COMPLETED                          CV_HGC_BIO_MOM          
+R14826.00  1997  KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)            KEY!RACE_ETHNICITY      
+R21915.00  1998  R EVER USE COCAINE/HARD DRUGS?                                      YSAQ-372B               
+S12493.00  2002  HAVE R'S PARENTS DIVORCED (EACH OTH OR SOMEONE ELSE) IN LAST 5 YRS  YHEA-3000               
+T52023.00  2010  CENSUS REGION OF RESIDENCE                                          CV_CENSUS_REGION        
+T52067.00  2010  RS HIGHEST GRADE COMPLETED                                          CV_HGC_EVER_EDT         
+T52085.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 01                               CV_HRLY_PAY.01          
+T52086.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 02                               CV_HRLY_PAY.02          
+T52087.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 03                               CV_HRLY_PAY.03          
+T52088.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 04                               CV_HRLY_PAY.04          
+T52089.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 05                               CV_HRLY_PAY.05          
+T52090.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 06                               CV_HRLY_PAY.06          
+T52091.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 07                               CV_HRLY_PAY.07          
+T52092.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 08                               CV_HRLY_PAY.08          
+T52093.00  2010  WAGES - HOURLY RATE OF PAY FOR JOB 09                               CV_HRLY_PAY.09          
+T52114.00  2010  RS MARITAL/COHABIT STATUS                                           CV_MARSTAT              
+T52117.00  2010  # BIO CHILDREN R HAS IN HOUSEHOLD                                   CV_BIO_CHILD_HH         
+T66521.00  2011  CENSUS REGION OF RESIDENCE                                          CV_CENSUS_REGION        
+T66565.00  2011  RS HIGHEST GRADE COMPLETED                                          CV_HGC_EVER_EDT         
+T66587.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 01                               CV_HRLY_PAY.01          
+T66588.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 02                               CV_HRLY_PAY.02          
+T66589.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 03                               CV_HRLY_PAY.03          
+T66590.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 04                               CV_HRLY_PAY.04          
+T66591.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 05                               CV_HRLY_PAY.05          
+T66592.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 06                               CV_HRLY_PAY.06          
+T66593.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 07                               CV_HRLY_PAY.07          
+T66594.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 08                               CV_HRLY_PAY.08          
+T66595.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 09                               CV_HRLY_PAY.09          
+T66596.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 10                               CV_HRLY_PAY.10          
+T66597.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 11                               CV_HRLY_PAY.11          
+T66598.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 12                               CV_HRLY_PAY.12          
+T66599.00  2011  WAGES - HOURLY RATE OF PAY FOR JOB 13                               CV_HRLY_PAY.13          
+T66628.00  2011  RS MARITAL/COHABIT STATUS                                           CV_MARSTAT              
+T66631.00  2011  # BIO CHILDREN R HAS IN HOUSEHOLD                                   CV_BIO_CHILD_HH         
+T81237.00  2013  CENSUS REGION OF RESIDENCE                                          CV_CENSUS_REGION        
+T81289.00  2013  RS HIGHEST GRADE COMPLETED                                          CV_HGC_EVER_EDT         
+T81308.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 01                               CV_HRLY_PAY.01          
+T81309.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 02                               CV_HRLY_PAY.02          
+T81310.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 03                               CV_HRLY_PAY.03          
+T81311.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 04                               CV_HRLY_PAY.04          
+T81312.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 05                               CV_HRLY_PAY.05          
+T81313.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 06                               CV_HRLY_PAY.06          
+T81314.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 07                               CV_HRLY_PAY.07          
+T81315.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 08                               CV_HRLY_PAY.08          
+T81316.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 09                               CV_HRLY_PAY.09          
+T81317.00  2013  WAGES - HOURLY RATE OF PAY FOR JOB 10                               CV_HRLY_PAY.10          
+T81340.00  2013  RS MARITAL/COHABIT STATUS                                           CV_MARSTAT              
+T81343.00  2013  # BIO CHILDREN R HAS IN HOUSEHOLD                                   CV_BIO_CHILD_HH         
+U00019.00  2015  CENSUS REGION OF RESIDENCE                                          CV_CENSUS_REGION        
+U00088.00  2015  RS HIGHEST GRADE COMPLETED                                          CV_HGC_EVER_EDT         
+U00107.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 01                               CV_HRLY_PAY.01          
+U00108.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 02                               CV_HRLY_PAY.02          
+U00109.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 03                               CV_HRLY_PAY.03          
+U00110.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 04                               CV_HRLY_PAY.04          
+U00111.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 05                               CV_HRLY_PAY.05          
+U00112.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 06                               CV_HRLY_PAY.06          
+U00113.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 07                               CV_HRLY_PAY.07          
+U00114.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 08                               CV_HRLY_PAY.08          
+U00115.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 09                               CV_HRLY_PAY.09          
+U00116.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 10                               CV_HRLY_PAY.10          
+U00117.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 11                               CV_HRLY_PAY.11          
+U00118.00  2015  WAGES - HOURLY RATE OF PAY FOR JOB 12                               CV_HRLY_PAY.12          
+U00145.00  2015  RS MARITAL/COHABIT STATUS                                           CV_MARSTAT              
+U00148.00  2015  # BIO CHILDREN R HAS IN HOUSEHOLD                                   CV_BIO_CHILD_HH         
+U00149.01  2015  # BIO CHILDREN R HAS IN HOUSEHOLD (UNDER AGE 18 ONLY)               CV_BIO_CHILD_HH_U18     
+U18386.00  2017  CENSUS REGION OF RESIDENCE                                          CV_CENSUS_REGION        
+U18454.00  2017  RS HIGHEST GRADE COMPLETED                                          CV_HGC_EVER_EDT         
+U18476.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 01                               CV_HRLY_PAY.01          
+U18477.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 02                               CV_HRLY_PAY.02          
+U18478.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 03                               CV_HRLY_PAY.03          
+U18479.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 04                               CV_HRLY_PAY.04          
+U18480.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 05                               CV_HRLY_PAY.05          
+U18481.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 06                               CV_HRLY_PAY.06          
+U18482.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 07                               CV_HRLY_PAY.07          
+U18483.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 08                               CV_HRLY_PAY.08          
+U18484.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 09                               CV_HRLY_PAY.09          
+U18485.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 10                               CV_HRLY_PAY.10          
+U18486.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 11                               CV_HRLY_PAY.11          
+U18487.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 12                               CV_HRLY_PAY.12          
+U18488.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 13                               CV_HRLY_PAY.13          
+U18489.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 14                               CV_HRLY_PAY.14          
+U18490.00  2017  WAGES - HOURLY RATE OF PAY FOR JOB 15                               CV_HRLY_PAY.15          
+U18523.00  2017  RS MARITAL/COHABIT STATUS                                           CV_MARSTAT              
+U18526.00  2017  # BIO CHILDREN R HAS IN HOUSEHOLD                                   CV_BIO_CHILD_HH         
+U18528.00  2017  # BIO CHILDREN R HAS IN HOUSEHOLD (UNDER AGE 18 ONLY)               CV_BIO_CHILD_HH_U18     
+U34380.00  2019  CENSUS REGION OF RESIDENCE                                          CV_CENSUS_REGION        
+U34439.00  2019  RS HIGHEST GRADE COMPLETED                                          CV_HGC_EVER_EDT         
+U34457.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 01                               CV_HRLY_PAY.01          
+U34458.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 02                               CV_HRLY_PAY.02          
+U34459.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 03                               CV_HRLY_PAY.03          
+U34460.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 04                               CV_HRLY_PAY.04          
+U34461.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 05                               CV_HRLY_PAY.05          
+U34462.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 06                               CV_HRLY_PAY.06          
+U34463.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 07                               CV_HRLY_PAY.07          
+U34464.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 08                               CV_HRLY_PAY.08          
+U34465.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 09                               CV_HRLY_PAY.09          
+U34466.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 10                               CV_HRLY_PAY.10          
+U34467.00  2019  WAGES - HOURLY RATE OF PAY FOR JOB 11                               CV_HRLY_PAY.11          
+U34514.00  2019  RS MARITAL/COHABIT STATUS                                           CV_MARSTAT              
+U34519.00  2019  # BIO CHILDREN R HAS IN HOUSEHOLD (UNDER AGE 18 ONLY)               CV_BIO_CHILD_HH_U18     
+U49431.00  2021  CENSUS REGION OF RESIDENCE                                          CV_CENSUS_REGION        
+U49496.00  2021  RS HIGHEST GRADE COMPLETED                                          CV_HGC_EVER_EDT         
+U49513.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 01                               CV_HRLY_PAY.01          
+U49514.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 02                               CV_HRLY_PAY.02          
+U49515.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 03                               CV_HRLY_PAY.03          
+U49516.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 04                               CV_HRLY_PAY.04          
+U49517.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 05                               CV_HRLY_PAY.05          
+U49518.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 06                               CV_HRLY_PAY.06          
+U49519.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 07                               CV_HRLY_PAY.07          
+U49520.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 08                               CV_HRLY_PAY.08          
+U49521.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 09                               CV_HRLY_PAY.09          
+U49522.00  2021  WAGES - HOURLY RATE OF PAY FOR JOB 10                               CV_HRLY_PAY.10          
+U49545.00  2021  RS MARITAL/COHABIT STATUS                                           CV_MARSTAT              
+U49550.00  2021  # BIO CHILDREN R HAS IN HOUSEHOLD (UNDER AGE 18 ONLY)               CV_BIO_CHILD_HH_U18     
+Z90654.01  XRND  # WEEKS ALL JOBS FROM AGE 20                                        CVC_WKSWK_ADULT2_ALL    
+Z90688.00  XRND  TOTAL HOURS R HAS WORKED YEAR 00.                                   CVC_HOURS_WK_YR_ALL.00  
+Z90689.00  XRND  TOTAL HOURS R HAS WORKED YEAR 01.                                   CVC_HOURS_WK_YR_ALL.01  
+Z90690.00  XRND  TOTAL HOURS R HAS WORKED YEAR 02.                                   CVC_HOURS_WK_YR_ALL.02  
+Z90691.00  XRND  TOTAL HOURS R HAS WORKED YEAR 03.                                   CVC_HOURS_WK_YR_ALL.03  
+Z90692.00  XRND  TOTAL HOURS R HAS WORKED YEAR 04.                                   CVC_HOURS_WK_YR_ALL.04  
+Z90693.00  XRND  TOTAL HOURS R HAS WORKED YEAR 05.                                   CVC_HOURS_WK_YR_ALL.05  
+Z90694.00  XRND  TOTAL HOURS R HAS WORKED YEAR 06.                                   CVC_HOURS_WK_YR_ALL.06  
+Z90695.00  XRND  TOTAL HOURS R HAS WORKED YEAR 07.                                   CVC_HOURS_WK_YR_ALL.07  
+Z90696.00  XRND  TOTAL HOURS R HAS WORKED YEAR 08.                                   CVC_HOURS_WK_YR_ALL.08  
+Z90697.00  XRND  TOTAL HOURS R HAS WORKED YEAR 09.                                   CVC_HOURS_WK_YR_ALL.09  
+Z90697.01  XRND  TOTAL HOURS R HAS WORKED YEAR 10.                                   CVC_HOURS_WK_YR_ALL.10  
+Z90697.02  XRND  TOTAL HOURS R HAS WORKED YEAR 11.                                   CVC_HOURS_WK_YR_ALL.11  
+Z90697.03  XRND  TOTAL HOURS R HAS WORKED YEAR 12.                                   CVC_HOURS_WK_YR_ALL.12  
+Z90697.04  XRND  TOTAL HOURS R HAS WORKED YEAR 13.                                   CVC_HOURS_WK_YR_ALL.13  
+Z90697.05  XRND  TOTAL HOURS R HAS WORKED YEAR 14.                                   CVC_HOURS_WK_YR_ALL.14  
+Z90697.06  XRND  TOTAL HOURS R HAS WORKED YEAR 15.                                   CVC_HOURS_WK_YR_ALL.15  
+Z90697.07  XRND  TOTAL HOURS R HAS WORKED YEAR 16.                                   CVC_HOURS_WK_YR_ALL.16  
+Z90697.08  XRND  TOTAL HOURS R HAS WORKED YEAR 17.                                   CVC_HOURS_WK_YR_ALL.17  
+Z90697.09  XRND  TOTAL HOURS R HAS WORKED YEAR 18.                                   CVC_HOURS_WK_YR_ALL.18  
+Z90697.10  XRND  TOTAL HOURS R HAS WORKED YEAR 19.                                   CVC_HOURS_WK_YR_ALL.19  
+Z90697.11  XRND  TOTAL HOURS R HAS WORKED YEAR 20.                                   CVC_HOURS_WK_YR_ALL.20  
+Z90697.12  XRND  TOTAL HOURS R HAS WORKED YEAR 21.                                   CVC_HOURS_WK_YR_ALL.21  
+Z90697.13  XRND  TOTAL HOURS R HAS WORKED YEAR 22.                                   CVC_HOURS_WK_YR_ALL.22  
+Z90698.00  XRND  TOTAL HOURS R HAS WORKED YEAR 80.                                   CVC_HOURS_WK_YR_ALL.80  
+Z90699.00  XRND  TOTAL HOURS R HAS WORKED YEAR 81.                                   CVC_HOURS_WK_YR_ALL.81  
+Z90700.00  XRND  TOTAL HOURS R HAS WORKED YEAR 82.                                   CVC_HOURS_WK_YR_ALL.82  
+Z90701.00  XRND  TOTAL HOURS R HAS WORKED YEAR 83.                                   CVC_HOURS_WK_YR_ALL.83  
+Z90702.00  XRND  TOTAL HOURS R HAS WORKED YEAR 84.                                   CVC_HOURS_WK_YR_ALL.84  
+Z90703.00  XRND  TOTAL HOURS R HAS WORKED YEAR 85.                                   CVC_HOURS_WK_YR_ALL.85  
+Z90704.00  XRND  TOTAL HOURS R HAS WORKED YEAR 86.                                   CVC_HOURS_WK_YR_ALL.86  
+Z90705.00  XRND  TOTAL HOURS R HAS WORKED YEAR 87.                                   CVC_HOURS_WK_YR_ALL.87  
+Z90706.00  XRND  TOTAL HOURS R HAS WORKED YEAR 88.                                   CVC_HOURS_WK_YR_ALL.88  
+Z90707.00  XRND  TOTAL HOURS R HAS WORKED YEAR 89.                                   CVC_HOURS_WK_YR_ALL.89  
+Z90708.00  XRND  TOTAL HOURS R HAS WORKED YEAR 90.                                   CVC_HOURS_WK_YR_ALL.90  
+Z90709.00  XRND  TOTAL HOURS R HAS WORKED YEAR 91.                                   CVC_HOURS_WK_YR_ALL.91  
+Z90710.00  XRND  TOTAL HOURS R HAS WORKED YEAR 92.                                   CVC_HOURS_WK_YR_ALL.92  
+Z90711.00  XRND  TOTAL HOURS R HAS WORKED YEAR 93.                                   CVC_HOURS_WK_YR_ALL.93  
+Z90712.00  XRND  TOTAL HOURS R HAS WORKED YEAR 94.                                   CVC_HOURS_WK_YR_ALL.94  
+Z90713.00  XRND  TOTAL HOURS R HAS WORKED YEAR 95.                                   CVC_HOURS_WK_YR_ALL.95  
+Z90714.00  XRND  TOTAL HOURS R HAS WORKED YEAR 96.                                   CVC_HOURS_WK_YR_ALL.96  
+Z90715.00  XRND  TOTAL HOURS R HAS WORKED YEAR 97.                                   CVC_HOURS_WK_YR_ALL.97  
+Z90716.00  XRND  TOTAL HOURS R HAS WORKED YEAR 98.                                   CVC_HOURS_WK_YR_ALL.98  
+Z90717.00  XRND  TOTAL HOURS R HAS WORKED YEAR 99.                                   CVC_HOURS_WK_YR_ALL.99  
+Z90851.00  XRND  ROUND LAST INTERVIEWED                                              CVC_RND                 

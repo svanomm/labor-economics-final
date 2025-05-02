@@ -1,0 +1,37 @@
+		(1)	(2)	(3)
+VARIABLES	LABELS	Heckit	Heckit	Heckit
+				
+education	Years of Education	0.071***		
+		(0.003)		
+fte_experience	Work Experience	0.031***		
+		(0.004)		
+fte_experience_sq	Work Experience Squared	0.000		
+		(0.000)		
+flag_black	Black	-0.133***	-0.142***	
+		(0.020)	(0.046)	
+flag_hispanic	Hispanic	-0.020	-0.127***	
+		(0.021)	(0.048)	
+num_children	Number of Children	-0.056***	-0.151***	
+		(0.005)	(0.012)	
+2.cv_census_region	Census Region = 2	-0.109***		
+		(0.022)		
+3.cv_census_region	Census Region = 3	-0.134***		
+		(0.020)		
+4.cv_census_region	Census Region = 4	-0.021		
+		(0.022)		
+age	Age		-0.012***	
+			(0.003)	
+flag_married	Married		-0.095***	
+			(0.030)	
+athrho				1.568***
+				(0.048)
+lnsigma				-0.570***
+				(0.015)
+Constant	Constant	1.579***	1.594***	
+		(0.047)	(0.103)	
+				
+Observations		18,360	18,360	18,360
+Region FE		Yes	Yes	Yes
+\rho		0.917	0.917	0.917
+Robust standard errors in parentheses				
+*** p<0.01, ** p<0.05, * p<0.1				

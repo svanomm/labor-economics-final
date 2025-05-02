@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\begin{table}[tbp] \centering
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\caption{Summary of Estimated Wage Effects}
+\begin{tabularx}{\linewidth}{@{}lCC@{}}
+
+\toprule
+{Model}&{Coefficient}&{SE} \tabularnewline
+\midrule \addlinespace[\belowrulesep]
+Basic OLS&0.084***&(0.003) \tabularnewline
+OLS w/ Controls&0.081***&(0.003) \tabularnewline
+IV 1&0.131***&(0.008) \tabularnewline
+IV 2&0.118***&(0.007) \tabularnewline
+Heckit&0.071***&(0.003) \tabularnewline
+IV+Heckit&0.097***&(0.006) \tabularnewline
+\midrule Clustered standard errors in parentheses&& \tabularnewline
+*** p<0.01, ** p<0.05, * p<0.1&& \tabularnewline
+\bottomrule 
+
+\end{tabularx}
+\end{table}
+\end{document}

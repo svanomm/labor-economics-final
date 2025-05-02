@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{booktabs, graphicx}
+\usepackage{tabularx}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+\begin{table}[tbp] \centering
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\caption{Regression Results}
+\scalebox{0.7}{
+\begin{tabularx}{\linewidth}{@{}lCCCCCC@{}}
+\toprule
+&{(1)}&{(2)}&{(3)}&{(4)}&{(5)}&{(6)} \tabularnewline \midrule
+\midrule \addlinespace[\belowrulesep]
+&Basic OLS&OLS w/ Controls&IV 1&IV 2&Heckit&IV+Heckit \tabularnewline
+\midrule Years of Education&0.084***&0.081***&0.131***&0.118***&0.071***&0.097*** \tabularnewline
+&(0.003)&(0.003)&(0.008)&(0.007)&(0.003)&(0.006) \tabularnewline
+Work Experience&0.031***&0.029***&0.016***&0.019***&0.031***&0.028*** \tabularnewline
+&(0.005)&(0.005)&(0.005)&(0.005)&(0.004)&(0.004) \tabularnewline
+Work Experience Squared&0.000&0.000&0.001***&0.001**&0.000&0.000 \tabularnewline
+&(0.000)&(0.000)&(0.000)&(0.000)&(0.000)&(0.000) \tabularnewline
+Black&&-0.137***&-0.117***&-0.122***&-0.133***&-0.121*** \tabularnewline
+&&(0.018)&(0.019)&(0.019)&(0.020)&(0.020) \tabularnewline
+Hispanic&&-0.014&0.042**&0.028&-0.020&0.009 \tabularnewline
+&&(0.019)&(0.021)&(0.020)&(0.021)&(0.022) \tabularnewline
+Number of Children&&--0.017***&0.006&0.000&--0.056***&--0.046*** \tabularnewline
+&&(0.023)&(0.024)&(0.024)&(0.022)&(0.021) \tabularnewline
+Constant&1.352***&1.540***&0.848***&1.021***&1.579***&1.200*** \tabularnewline
+&(0.042)&(0.048)&(0.115)&(0.097)&(0.047)&(0.093) \tabularnewline
+\midrule Observations&15,490&15,352&15,352&15,352&18,360&18,498 \tabularnewline
+Adjusted R-squared&0.309&0.335&0.280&0.304&& \tabularnewline
+Region FE&No&Yes&Yes&Yes&Yes&Yes \tabularnewline
+Clustered standard errors in parentheses&&&&&& \tabularnewline
+*** p$<$0.01, ** p$<$0.05, * p$<$0.1&&&&&& \tabularnewline
+\bottomrule 
+
+\end{tabularx}
+}
+\end{table}
+\end{document}

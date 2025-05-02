@@ -1,0 +1,38 @@
+		(1)	(2)	(3)	(4)
+		IV 1	IV 1	IV 2	IV 2
+VARIABLES	LABELS	Education	Log(Wage)	Education	Log(Wage)
+					
+education	Years of Education		0.131***		0.118***
+			(0.008)		(0.007)
+fte_experience	Work Experience		0.016***		0.019***
+			(0.005)		(0.005)
+fte_experience_sq	Work Experience Squared		0.001***		0.001**
+			(0.000)		(0.000)
+flag_black	Black		-0.117***		-0.122***
+			(0.019)		(0.019)
+flag_hispanic	Hispanic		0.042**		0.028
+			(0.021)		(0.020)
+num_children	Number of Children		0.006		0.000
+			(0.006)		(0.006)
+2.cv_census_region	Census Region = 2		-0.108***		-0.108***
+			(0.025)		(0.024)
+3.cv_census_region	Census Region = 3		-0.120***		-0.122***
+			(0.022)		(0.022)
+4.cv_census_region	Census Region = 4		-0.011		-0.010
+			(0.024)		(0.024)
+education_dad	Dad's Education	0.202***		0.188***	
+		(0.021)		(0.020)	
+education_mom	Mom's Education	0.223***		0.221***	
+		(0.024)		(0.023)	
+drug_use_score	Childhood Drug Use Score			-0.032***	
+				(0.005)	
+school_quality	School Quality Score			0.201***	
+				(0.025)	
+Constant	Constant	9.337***	0.848***	9.414***	1.021***
+		(0.258)	(0.115)	(0.247)	(0.097)
+					
+Observations		15,490	15,352	15,490	15,352
+Adjusted R-squared		0.158	0.280	0.205	0.304
+Region FE		No	Yes	No	Yes
+Robust standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

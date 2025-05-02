@@ -9,26 +9,8 @@ library(ivreg)
 # load the rds file
 data <- readRDS(here("./data/NLS_data.rds"))
 
-# Filter the data
-data <- data |> filter(
-  CV_HGC_BIO_DAD_1997 != 95,
-  CV_HGC_BIO_MOM_1997 != 95,
-  CV_HGC_EVER_EDT_2021 != 95,
-#  !is.na(CV_HRLY_PAY.01_2021),
-#  CV_HRLY_PAY.01_2021>100, # wage earners only
-#  !is.na(CVC_WKSWK_ADULT2_ALL_XRND),
-  !is.na(`CV_URBAN-RURAL_2021`),
-  `CV_URBAN-RURAL_2021` != 2
-)
-
-# Create new variables
+# Create new variables ----
 data <- data |> mutate(
-  flag_working = ifelse(
-    !is.na(CV_HRLY_PAY.01_2021) &
-    CV_HRLY_PAY.01_2021>100 &
-    !is.na(CVC_WKSWK_ADULT2_ALL_XRND),
-    1, 0
-  ),
   stolen_school       = ifelse(ifelse(is.na(`YSCH-35900_1997`), 0, `YSCH-35900_1997`) > 0, 1, 0),
   threatened_school   = ifelse(ifelse(is.na(`YSCH-36000_1997`), 0, `YSCH-36000_1997`) > 0, 1, 0),
   fight_school        = ifelse(ifelse(is.na(`YSCH-36100_1997`), 0, `YSCH-36100_1997`) > 0, 1, 0),
@@ -50,19 +32,9 @@ data <- data |> mutate(
   # I multiply by 15 because the last question is a binary 1-0.
   
   flag_female = ifelse(KEY_SEX_1997 == 2, 1, 0),
-  
-  parent_educ_score = CV_HGC_BIO_DAD_1997+CV_HGC_BIO_MOM_1997,
-  
   flag_black = ifelse(KEY_RACE_ETHNICITY_1997==1, 1, 0),
   flag_hispanic = ifelse(KEY_RACE_ETHNICITY_1997==2, 1, 0),
   flag_divorce = ifelse(ifelse(is.na(`YHEA-3000_2002`), 0, `YHEA-3000_2002`)==1, 1, 0),
-  
-  log_wage = log(CV_HRLY_PAY.01_2021/100),
-  
-  flag_urban = ifelse(`CV_URBAN-RURAL_2021`==1, 1, 0),
-  
-  years_experience = CVC_WKSWK_ADULT2_ALL_XRND / 52,
-  years_experience_sq = years_experience^2,
   
   # Proxy for school "quality" or experience
   school_quality = 
@@ -80,6 +52,135 @@ data <- data |> mutate(
   - absent_school
   - disrupt_learning   
   - cheating_school 
+)
+
+# Drop variables ----
+data <- data |> select(
+  -c(
+    `YSCH-35900_1997`,
+    `YSCH-36000_1997`,
+    `YSCH-36100_1997`,
+    `YSCH-36200_1997`,
+    `YSCH-36300_1997`,
+    `YSCH-36400_1997`,
+    `YSCH-36500_1997`,
+    `YSCH-36600_1997`,
+    `YSCH-36700_1997`,
+    `YSCH-36800_1997`,
+    `YSCH-36900_1997`,
+    `YSCH-37000_1997`,
+    
+    # Drug use variables
+    `YSAQ-361_1997`, 
+    `YSAQ-365_1997`, 
+    `YSAQ-371_1997`, 
+    `YSAQ-372B_1998`,
+    KEY_SEX_1997,KEY_RACE_ETHNICITY_1997,`YHEA-3000_2002`,
+    stolen_school,      
+    threatened_school,  
+    fight_school,       
+    late_school,        
+    absent_school,      
+    teachers_good,      
+    teachers_interested,
+    disrupt_learning,   
+    graded_fairly,      
+    cheating_school,    
+    discipline_fair,    
+    safe_school,
+    CV_CENSUS_REGION_1997,
+    CV_SAMPLE_TYPE_1997
+  )
+)
+
+# Rename the 1997 columns
+data <- data |> rename(
+  education_dad = CV_HGC_BIO_DAD_1997,
+  education_mom = CV_HGC_BIO_MOM_1997,
+  id = PUBID_1997,
+  birth_year = KEY_BDATE_Y_1997,
+  birth_month = KEY_BDATE_M_1997,
+)
+
+# Rename some columns to fix the year pattern
+rename_columns <- function(df) {
+  old_names <- names(df)
+  new_names <- sapply(old_names, function(name) {
+    if (grepl("CVC_HOURS_WK_YR_ALL\\.[0-9]{2}_XRND", name)) {
+      year_digits <- sub(".*\\.([0-9]{2})_XRND", "\\1", name)
+      full_year <- ifelse(as.numeric(year_digits) > 50, 
+                          paste0("19", year_digits), 
+                          paste0("20", year_digits))
+      new_name <- sub("\\.([0-9]{2})_XRND", paste0(".", full_year), name)
+      return(new_name)
+    } else {
+      return(name)
+    }
+  })
+  names(df) <- new_names
+  return(df)
+}
+
+data <- rename_columns(data)
+
+# For all columns CVC_HOURS_WK_YR_ALL.2002:CVC_HOURS_WK_YR_ALL.2021, cap them at 4000 hours
+data <- data |> mutate(across(starts_with("CVC_HOURS_WK_YR_ALL"), ~ ifelse(. > 4000, 4000, .)))
+
+# Create variables for cumulative hours worked since 2002 (at least 18)
+data$hours_worked_since02_2010 <- data |> select(CVC_HOURS_WK_YR_ALL.2002:CVC_HOURS_WK_YR_ALL.2010) |> rowSums(na.rm = TRUE)
+data$hours_worked_since02_2011 <- data |> select(CVC_HOURS_WK_YR_ALL.2002:CVC_HOURS_WK_YR_ALL.2011) |> rowSums(na.rm = TRUE)
+data$hours_worked_since02_2013 <- data |> select(CVC_HOURS_WK_YR_ALL.2002:CVC_HOURS_WK_YR_ALL.2013) |> rowSums(na.rm = TRUE)
+data$hours_worked_since02_2015 <- data |> select(CVC_HOURS_WK_YR_ALL.2002:CVC_HOURS_WK_YR_ALL.2015) |> rowSums(na.rm = TRUE)
+data$hours_worked_since02_2017 <- data |> select(CVC_HOURS_WK_YR_ALL.2002:CVC_HOURS_WK_YR_ALL.2017) |> rowSums(na.rm = TRUE)
+data$hours_worked_since02_2019 <- data |> select(CVC_HOURS_WK_YR_ALL.2002:CVC_HOURS_WK_YR_ALL.2019) |> rowSums(na.rm = TRUE)
+data$hours_worked_since02_2021 <- data |> select(CVC_HOURS_WK_YR_ALL.2002:CVC_HOURS_WK_YR_ALL.2021) |> rowSums(na.rm = TRUE)
+data <- data |> select(-c(CVC_HOURS_WK_YR_ALL.2000:CVC_HOURS_WK_YR_ALL.1999))
+
+# Reshape the data long by year
+data <- data |> pivot_longer(
+  cols = matches("_20"),
+  names_to = c(".value", "year"),
+  names_pattern = "(.+)_(\\d+)$"
+) 
+
+
+# More renaming
+data <- data |> rename(
+  education = CV_HGC_EVER_EDT
+) |> relocate(
+  c(CV_MARSTAT, CV_BIO_CHILD_HH, CV_BIO_CHILD_HH_U18), .before = CV_HRLY_PAY.01
+)
+
+# Calculate wage (maximum across all reported jobs in the year)
+data <- data |> rowwise(id) |> 
+  mutate(
+    wage = max(c_across(CV_HRLY_PAY.01:CV_HRLY_PAY.15), na.rm = TRUE),
+  ) |> ungroup() |>
+  select(-c(CV_HRLY_PAY.01:CV_HRLY_PAY.15))
+
+data <- data |> mutate(
+  wage = ifelse(is.infinite(wage), NA, wage/100),
+  log_wage = log(wage),
+  fte_experience = hours_worked_since02 / 2000
+)
+
+# Data Filters ----
+data <- data |> filter(
+  education_dad != 95, # we need dad's education
+  education_mom != 95,
+  education != 95, # this also removes years after a respondent drops out
+  (is.na(wage) | (wage > 5 & wage < 250)) # remove outlier wages
+)
+
+# Create new variables
+data <- data |> mutate(
+  flag_working = ifelse(!is.na(wage), 1, 0),
+  flag_married = ifelse(CV_MARSTAT %in% c(3,4), 1, 0),
+  num_children = ifelse(is.na(CV_BIO_CHILD_HH), 0, CV_BIO_CHILD_HH),
+  fte_experience_sq = fte_experience^2,
+  age = as.numeric(year) - birth_year
+) |> select(
+  -c(CVC_WKSWK_ADULT2_ALL_XRND, CVC_RND_XRND, CV_MARSTAT, CV_BIO_CHILD_HH, CV_BIO_CHILD_HH_U18)
 )
 
 # Save as CSV file
