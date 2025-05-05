@@ -1,44 +1,28 @@
-\documentclass{article}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage[margin=1in]{geometry}
-\begin{document}
-
-\begin{table}[tbp] \centering
+\begin{table}[h] \centering
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 \caption{IV Regression Stage 2 Results}
-\begin{tabularx}{\linewidth}{@{}lCC@{}}
+{\footnotesize
+\begin{tabularx}{0.5\linewidth}{@{}lCC@{}}
 
 \toprule
-&{(1)}&{(2)} \tabularnewline \midrule
-{v1}&{v3}&{v5} \tabularnewline
-\midrule \addlinespace[\belowrulesep]
 &IV 1&IV 2 \tabularnewline
 &Log(Wage)&Log(Wage) \tabularnewline
 \midrule Years of Education&0.131***&0.118*** \tabularnewline
-&(0.008)&(0.007) \tabularnewline
 Work Experience&0.016***&0.019*** \tabularnewline
-&(0.005)&(0.005) \tabularnewline
 Work Experience Squared&0.001***&0.001** \tabularnewline
-&(0.000)&(0.000) \tabularnewline
-Black&--0.117***&--0.122*** \tabularnewline
-&(0.019)&(0.019) \tabularnewline
+Black&-0.117***&-0.122*** \tabularnewline
 Hispanic&0.042**&0.028 \tabularnewline
-&(0.021)&(0.020) \tabularnewline
 Number of Children&0.006&0.000 \tabularnewline
-&(0.024)&(0.024) \tabularnewline
-Constant&0.848***&1.021*** \tabularnewline
-&(0.115)&(0.097) \tabularnewline
-\midrule Observations&15,352&15,352 \tabularnewline
+\midrule Constant&0.848***&1.021*** \tabularnewline
+Observations&15,352&15,352 \tabularnewline
 Adjusted R-squared&0.280&0.304 \tabularnewline
 Region FE&Yes&Yes \tabularnewline
-Clustered standard errors in parentheses&& \tabularnewline
-*** p<0.01, ** p<0.05, * p<0.1&& \tabularnewline
-\bottomrule 
+\bottomrule \addlinespace[\belowrulesep]
 
 \end{tabularx}
+\\ \parbox{0.5\linewidth}{\footnotesize Standard errors clustered by participant. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.}
+}
 \end{table}
-\end{document}

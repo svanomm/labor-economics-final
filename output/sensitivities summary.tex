@@ -3,18 +3,19 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
-\caption{Summary of Estimated Wage Effects}
+\caption{Summary of Sensitivities}
 \begin{tabularx}{0.5\linewidth}{@{}lCC@{}}
 
 \toprule
 {Model}&{Coefficient}&{SE} \tabularnewline
 \midrule \addlinespace[\belowrulesep]
-OLS 1&0.084***&(0.003) \tabularnewline
-OLS 2&0.081***&(0.003) \tabularnewline
-IV 1&0.131***&(0.008) \tabularnewline
-IV 2&0.118***&(0.007) \tabularnewline
-Heckit&0.071***&(0.003) \tabularnewline
-IV+Heckit&0.097***&(0.006) \tabularnewline
+OLS w/ FE&0.035***&(0.008) \tabularnewline
+IV 1 RE&0.117***&(0.007) \tabularnewline
+IV 2 RE&0.108***&(0.006) \tabularnewline
+Heckit RE&0.067***&(0.003) \tabularnewline
+IV+Heckit Endogenous&0.129***&(0.007) \tabularnewline
+IV+Heckit RE&0.104***&(0.006) \tabularnewline
+\midrule 
 \bottomrule \addlinespace[\belowrulesep]
 
 \end{tabularx}

@@ -1,0 +1,27 @@
+\begin{table}[h] \centering
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\caption{OLS Regression Results}
+{\footnotesize
+\begin{tabularx}{0.5\linewidth}{@{}lCC@{}}
+
+\toprule
+&OLS 1&OLS 2 \tabularnewline
+Years of Education&0.084***&0.081*** \tabularnewline
+\midrule Work Experience&0.031***&0.029*** \tabularnewline
+Work Experience Squared&0.000&0.000 \tabularnewline
+Black&&-0.137*** \tabularnewline
+Hispanic&&-0.014 \tabularnewline
+Number of Children&&-0.017*** \tabularnewline
+\midrule Constant&1.352***&1.540*** \tabularnewline
+Observations&15,490&15,352 \tabularnewline
+Adjusted R-squared&0.309&0.335 \tabularnewline
+Region FE&No&Yes \tabularnewline
+\bottomrule \addlinespace[\belowrulesep]
+
+\end{tabularx}
+\\ \parbox{0.5\linewidth}{\footnotesize Standard errors clustered by participant. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.}
+}
+\end{table}

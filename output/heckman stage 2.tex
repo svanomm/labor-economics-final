@@ -1,43 +1,27 @@
-\documentclass{article}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage[margin=1in]{geometry}
-\begin{document}
-
-\begin{table}[tbp] \centering
+\begin{table}[h] \centering
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 \caption{Heckman Selection Stage 2 Results}
-\begin{tabularx}{\linewidth}{@{}lC@{}}
+{\footnotesize
+\begin{tabularx}{0.5\linewidth}{@{}lC@{}}
 
 \toprule
-&{(1)} \tabularnewline \midrule
-{v1}&{v2} \tabularnewline
-\midrule \addlinespace[\belowrulesep]
 &Log(Wage) \tabularnewline
 \midrule Years of Education&0.071*** \tabularnewline
-&(0.003) \tabularnewline
 Work Experience&0.031*** \tabularnewline
-&(0.004) \tabularnewline
 Work Experience Squared&0.000 \tabularnewline
-&(0.000) \tabularnewline
-Black&--0.133*** \tabularnewline
-&(0.020) \tabularnewline
-Hispanic&--0.020 \tabularnewline
-&(0.021) \tabularnewline
-Number of Children&--0.056*** \tabularnewline
-&(0.022) \tabularnewline
+Black&-0.133*** \tabularnewline
+Hispanic&-0.020 \tabularnewline
+Number of Children&-0.056*** \tabularnewline
 Constant&1.579*** \tabularnewline
-&(0.047) \tabularnewline
 \midrule Observations&18,360 \tabularnewline
-\rho&0.917 \tabularnewline
 Region FE&Yes \tabularnewline
-Clustered standard errors in parentheses& \tabularnewline
-*** p<0.01, ** p<0.05, * p<0.1& \tabularnewline
-\bottomrule 
+\rho&0.917 \tabularnewline
+\bottomrule \addlinespace[\belowrulesep]
 
 \end{tabularx}
+\\ \parbox{0.5\linewidth}{\footnotesize Standard errors clustered by participant. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.}
+}
 \end{table}
-\end{document}

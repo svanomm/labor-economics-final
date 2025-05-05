@@ -185,3 +185,43 @@ data <- data |> mutate(
 
 # Save as CSV file
 write_csv(data, here("./data/reg_data.csv"))
+
+
+data <- read.csv(here("./data/reg_data.csv"))
+
+data <- data |> filter(flag_female == 1)
+
+# Heckman stage 1
+m1 <- glm(flag_working ~ num_children + flag_black + flag_hispanic + age + flag_married, family = binomial(link = "probit"), data=data)
+
+data$prob <- m1$fitted.values
+data$imr <- dnorm(data$prob) / pnorm(data$prob)
+
+#data <- data[data$flag_working == 1,]
+
+# IV stage 1
+m2 <- lm(education ~ education_dad + education_mom + drug_use_score + school_quality + flag_black + flag_hispanic, data=data)
+
+data$education_pred <- m2$fitted.values
+
+m3 <- lm(log_wage ~ education_pred + fte_experience + fte_experience_sq + flag_black + flag_hispanic + num_children + factor(CV_CENSUS_REGION) + imr, data=data)
+
+summary(m3)
+
+
+# Wooldridge Procedure 17.2
+## 1: Probit for IMR
+##  "all exogenous variables should appear in the selection equation"
+m1 <- glm(flag_working ~ num_children + flag_black + flag_hispanic + age + flag_married + education_dad + education_mom + drug_use_score + school_quality + flag_black + flag_hispanic, family = binomial(link = "probit"), data=data)
+
+data$prob <- m1$fitted.values
+data$imr <- dnorm(data$prob) / pnorm(data$prob)
+
+## 2: 2SLS on wage earners using Z and the IMR
+m2 <- lm(education ~ education_dad + education_mom + drug_use_score + school_quality + flag_black + flag_hispanic + imr, data=data[data$flag_working == 1,])
+
+data$education_pred <- ifelse(data$flag_working==1, m2$fitted.values, NA)
+
+m3 <- lm(log_wage ~ education_pred + fte_experience + fte_experience_sq + flag_black + flag_hispanic + num_children + factor(CV_CENSUS_REGION) + imr, data=data[data$flag_working == 1,])
+
+summary(m3)
