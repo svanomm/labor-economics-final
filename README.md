@@ -105,17 +105,12 @@ These instruments satisfy the relevance condition (correlated with education) wh
 3. **Comprehensive Bias Correction**: Simultaneous control for ability bias and employment selection
 4. **Robust Results**: Consistent findings across multiple sensitivity specifications
 
-## Software Requirements
-
-- **R packages**: `here`, `tidyverse`, `dplyr`, `stargazer`, `gridExtra`, `kableExtra`, `ivreg`
-- **Stata packages**: `cmp`, `estout`, `texsave`, `ghk2`
-
 ## Citation
 
 If you use this code or methodology, please cite:
 ```
-Van Ommeren (2025). "Education Effects on Female Wages: A Conditional Mixed Process Approach 
-to Ability Bias and Employment Selection." Labor Economics Final Project.
+VanOmmeren (2025). "Education Effects on Female Wages: A Conditional Mixed Process Approach 
+to Ability Bias and Employment Selection."
 ```
 
 ## License
