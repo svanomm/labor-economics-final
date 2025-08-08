@@ -1,7 +1,6 @@
 # Labor Economics Final Project: Education Effects on Female Wages
 
 **Final Project for Labor Economics class, 2025**  
-*Author: Van Ommeren*
 
 ## Project Overview
 
